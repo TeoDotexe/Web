@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 56px; /* Espaço para a navbar fixa */
+}
+
+.navbar {
+    background-color: #28a745;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: #f8f9fa;
+}
+
+
+.container {
+    padding-top: 50px;
+}
+
+h1.text-center {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.text-center {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-control {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+#result {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1.text-center {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1.text-center {
+        font-size: 1.5rem;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    background-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.container {
+    background-color: #f8f9fa; /* Fundo branco suave para container no tema claro */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-theme .navbar {
+    background-color: #343a40;
+}
+
+.dark-theme .btn-secondary {
+    background-color: #adb5bd;
+    border-color: #adb5bd;
+}
+
+.dark-theme .container {
+    background-color: #1e1e1e; /* Fundo escuro para container no tema escuro */
+    color: white;
+}
+
+.dark-theme label, 
+.dark-theme h1, 
+.dark-theme h2, 
+.dark-theme h3, 
+.dark-theme h4, 
+.dark-theme h5, 
+.dark-theme h6, 
+.dark-theme p, 
+.dark-theme a {
+    color: white; /* Certifique-se de que todos os textos estejam visíveis no tema escuro */
+}
+
+.dark-theme .form-control, 
+.dark-theme .form-group {
+    background-color: #333333;
+    color: white;
+    border: 1px solid #555555;
+}

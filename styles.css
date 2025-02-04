@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 56px; /* Espaço para a navbar fixa */
+}
+
+
+#hero {
+    background: url('hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    padding: 150px 0;
+    text-align: center;
+}
+
+#services, #gallery, #pricing, #contact {
+    padding: 50px 0;
+}
+
+#services .card, #pricing .card {
+    background-color: #f8f9fa;
+    transition: transform 0.3s;
+}
+
+#services .card:hover, #pricing .card:hover {
+    transform: translateY(-10px);
+}
+
+#gallery img {
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer {
+    background: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#result {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #hero {
+        padding: 100px 0;
+    }
+
+    #services .card, #pricing .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar .nav-link {
+        font-size: 1rem;
+    }
+
+    #hero {
+        padding: 80px 0;
+    }
+
+    #services, #gallery, #pricing, #contact {
+        padding: 30px 0;
+    }
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translateY(-50px);
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);
+}
+
+.navbar-transparent {
+    background-color: rgba(40, 167, 69, 1); 
+}
+
+.navbar-transparent .navbar-brand,
+.navbar-transparent .nav-link {
+    color: rgba(255, 255, 255, 0.8); 
+}
+
+.navbar-transparent .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); 
+}
+
+.navbar-transparent .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+#gallery .carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#galleryCarousel .carousel-inner {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.carousel-control-prev {
+    left: -5%; 
+}
+
+.carousel-control-next {
+    right: -5%; 
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    background-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.container {
+    background-color: #f8f9fa; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-theme .navbar {
+    background-color: #343a40;
+}
+
+.dark-theme .btn-secondary {
+    background-color: #adb5bd;
+    border-color: #adb5bd;
+}
+
+.dark-theme .container {
+    background-color: #1e1e1e; 
+    color: rgb(0, 0, 0);
+}
+
+.dark-theme label, 
+.dark-theme h1, 
+.dark-theme h2, 
+.dark-theme h3, 
+.dark-theme h4, 
+.dark-theme h5, 
+.dark-theme h6, 
+.dark-theme p, 
+.dark-theme a {
+    color: rgb(0, 0, 0); 
+}
+
+.dark-theme .form-control, 
+.dark-theme .form-group {
+    background-color: #333333;
+    color: white;
+    border: 1px solid #555555;
+}

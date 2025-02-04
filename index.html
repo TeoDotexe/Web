@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardins Perfeitos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar --> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Jardins Perfeitos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><button id="theme-toggle" class="btn btn-secondary">Alternar Tema</button></li>
+                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pricing">Preços</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="calculator.html">Calculadora de Orçamento</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Bem-vindo ao Jardins Perfeitos</h1>
+            <p class="lead">Transformamos seu jardim em um paraíso</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Entre em contato</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container my-5">
+        <h2 class="text-center text-success">Nossos Serviços</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card border-success shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Paisagismo</h3>
+                        <p class="card-text">Transformamos seu espaço com projetos paisagísticos únicos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-success shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Manutenção</h3>
+                        <p class="card-text">Serviços de manutenção para manter seu jardim sempre lindo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-success shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Decoração</h3>
+                        <p class="card-text">Decorações temáticas para eventos e ocasiões especiais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="container my-5">
+    <h2 class="text-center text-success">Galeria</h2>
+    <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <img src="imagem1.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Projeto 1" data-toggle="modal" data-target="#modal1">
+                        <p class="text-center mt-2">Projeto 1</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="imagem2.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Projeto 2" data-toggle="modal" data-target="#modal2">
+                        <p class="text-center mt-2">Projeto 2</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="imagem3.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Projeto 3" data-toggle="modal" data-target="#modal3">
+                        <p class="text-center mt-2">Projeto 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <img src="imagem4.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Projeto 4" data-toggle="modal" data-target="#modal4">
+                        <p class="text-center mt-2">Projeto 4</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="imagem5.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Projeto 5" data-toggle="modal" data-target="#modal5">
+                        <p class="text-center mt-2">Projeto 5</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="imagem6.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Projeto 6" data-toggle="modal" data-target="#modal6">
+                        <p class="text-center mt-2">Projeto 6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+<!-- Modals -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Informações Adicionais - Projeto 1</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Conteúdo do modal -->
+                <h3>Projeto 1</h3>
+                <p>Aqui você pode adicionar informações adicionais sobre o projeto.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Informações Adicionais - Projeto 2</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Conteúdo do modal -->
+                <h3>Projeto 2</h3>
+                <p>Aqui você pode adicionar informações adicionais sobre o projeto.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Informações Adicionais - Projeto 3</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Conteúdo do modal -->
+                <h3>Projeto 3</h3>
+                <p>Aqui você pode adicionar informações adicionais sobre o projeto.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Informações Adicionais - Projeto 4</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Conteúdo do modal -->
+                <h3>Projeto 4</h3>
+                <p>Aqui você pode adicionar informações adicionais sobre o projeto.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Informações Adicionais - Projeto 5</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Conteúdo do modal -->
+                <h3>Projeto 5</h3>
+                <p>Aqui você pode adicionar informações adicionais sobre o projeto.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Informações Adicionais - Projeto 6</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Conteúdo do modal -->
+                <h3>Projeto 6</h3>
+                <p>Aqui você pode adicionar informações adicionais sobre o projeto.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="container my-5">
+        <h2 class="text-center text-success">Preços</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card border-success shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Básico</h3>
+                        <p class="card-text">R$ 100</p>
+                        <ul class="list-unstyled">
+                            <li>Consultoria</li>
+                            <li>Manutenção básica</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-success shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Avançado</h3>
+                        <p class="card-text">R$ 300</p>
+                        <ul class="list-unstyled">
+                            <li>Consultoria</li>
+                            <li>Paisagismo</li>
+                            <li>Manutenção avançada</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-success shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Premium</h3>
+                        <p class="card-text">R$ 500</p>
+                        <ul class="list-unstyled">
+                            <li>Consultoria</li>
+                            <li>Paisagismo</li>
+                            <li>Manutenção completa</li>
+                            <li>Decoração</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center text-success">Contato</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jardins Perfeitos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+            navbarLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+
+            const contactButton = document.querySelector('.jumbotron .btn-primary');
+
+            contactButton.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const calculatorButton = document.querySelector('.navbar-nav .nav-link[href="calculator.html"]');
+            
+            calculatorButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                
+                window.location.href = this.getAttribute('href');
+            });
+        });
+    </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("KqF1uWguZIRqyCuyV"); // 
+       })();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Orçamento - Jardins Perfeitos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylecalculator.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Jardins Perfeitos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><button id="theme-toggle" class="btn btn-secondary">Alternar Tema</button></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#services">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#gallery">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#pricing">Preços</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="calculator.html">Calculadora de Orçamento</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Calculator Section -->
+    <section class="container mt-5">
+        <h2 class="text-center text-success">Calculadora de Orçamento</h2>
+        <p class="text-center text-muted">Use esta ferramenta para calcular o custo estimado dos serviços de jardinagem com base na área do seu jardim, no tipo de serviço desejado e no seu endereço.</p>
+        <form id="calculator-form" class="bg-light p-4 rounded shadow-sm">
+            <div class="form-group">
+                <label for="area">Área do Jardim (em m²)</label>
+                <input type="number" class="form-control" id="area" required>
+            </div>
+            <div class="form-group">
+                <label for="service-type">Tipo de Serviço</label>
+                <select class="form-control" id="service-type" required>
+                    <option value="paisagismo">Paisagismo</option>
+                    <option value="manutencao">Manutenção</option>
+                    <option value="decoracao">Decoração</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="frequency">Frequência do Serviço</label>
+                <select class="form-control" id="frequency" required>
+                    <option value="semanal">Semanal</option>
+                    <option value="mensal">Mensal</option>
+                    <option value="unica">Única</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular</button>
+        </form>
+        <div id="result" class="mt-4 text-center"></div>
+
+        <!-- Map Section -->
+        <div id="map" class="mt-5"></div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scriptcalculator.js"></script>
+    <script src="maps.js"></script>
+</body>
+</html>

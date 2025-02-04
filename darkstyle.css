@@ -1,0 +1,27 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    background-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-theme .navbar {
+    background-color: #343a40;
+}
+
+.dark-theme .btn-secondary {
+    background-color: #adb5bd;
+    border-color: #adb5bd;
+}
